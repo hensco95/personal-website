@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Kanit', sans-serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+h1{
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+}
+h2{
+  font-size: 1.6rem;
+}
+h3{
+  font-size: 1.4rem;
+}
+h4{
+  font-size: 1.1rem;
+}
+h5{
+  font-size: 0.8rem;
+}
+h6{
+  font-size: 0.5rem;
+}
+p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+img{
+  width: 100%;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  
+}
+
+body{
+  font-family: 'Alata', sans-serif;
+  color: rgba(255, 255, 255, 0.911);
+  background: rgba(0, 0, 0, 0.89);
+}
+nav {
+  text-align:center;
+  padding: 1rem 0rem;
+}
+section{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  text-align: center;
+  padding: 2rem 0rem;
+  border-bottom: 0.1px solid #ffffff69;
+}
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.7rem;
+  padding: 1rem 0rem;
+}
+.link a:hover{
+  color: goldenrod;
+}
+.hero{
+  display: grid;
+  align-items: center;
+}
+.hero span{
+  border-bottom: 2px solid goldenrod;
+}
+.hero img{
+  width:90%;
+  margin: 0 auto;
+  opacity: .6;
+}
+.hero_txt{
+  margin-top: 5rem;
+}
+.contact a{
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid goldenrod;
+}
+.contact a:hover{
+  border-bottom: 2px solid skyblue;
+  transition: all 0.3s linear;
+}
+.skill{
+  padding: 0rem 2rem;
+}
+.skill h3{
+  font-size: 1.2rem;
+}
+.skill p{
+  font-size: 0.9rem;
+}
+
+.projects{
+  text-align: left;
+}
+.projects_container{
+  display: grid;
+  gap: 2rem;
+}
+.project{
+  display: grid;
+  grid-row-gap: 0.5rem;
+}
+.view{
+  display: flex;
+  gap:1rem;
+}
+.project a{
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid goldenrod;
+}
+.project a:hover {
+  border-bottom: 2px solid skyblue;
+  transition: all 0.3s linear;
+}
+
+.ed{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.ed p{
+  margin-bottom: 0rem;
+  font-size: 1rem;
+}
+
+.ed_right{
+  text-align: right;
+  padding: 1rem;
+}
+
+.ed_right p{
+  font-style: italic;
+}
+
+footer{
+  background-color: rgba(0, 0, 0, 0.226);
+  text-align: center;
+}
+.contact_wrap{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.contact_wrap a{
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid goldenrod;
+}
+.contact_wrap a:hover{
+  border-bottom: 2px solid dodgerblue;
+}
+
+@media screen and (min-width:650px){
+  h1{
+    font-size: 2.7rem;
+  }
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    h3 {
+      font-size: 1.6rem;
+    }
+  
+    h4 {
+      font-size: 1.2rem;
+    }
+  
+    h5 {
+      font-size: 0.9rem;
+    }
+  
+    h6 {
+      font-size: 0.7rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      margin-bottom: 2rem;
+    }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .hero{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .hero_txt{
+    margin: 0;
+    /* height: 50vh; */
+  }
+  .section_inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+  }
+  .skill{
+    text-align: left;
+    border-right: 1px solid rgba(218, 165, 32, 0.192);
+    border-bottom: 1px solid rgba(218, 165, 32, 0.192);
+  }
+
+  .skill p{
+    font-size: 1.1rem;;
+  }
+  .skill h3{
+    font-size: 1.7rem;
+  }
+  .projects_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* grid-column-gap: 2.5rem; */
+  }
+  .projects_container img{
+    width: 90%;
+    display: grid;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:900px) {
+  h1 {
+      font-size: 3rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    h3 {
+      font-size: 1.8rem;
+    }
+  
+    h4 {
+      font-size: 1.4rem;
+    }
+  
+    h5 {
+      font-size: 1.1rem;
+    }
+  
+    h6 {
+      font-size: 0.8rem;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-bottom: 2rem;
+    }
+  .section_inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+}
